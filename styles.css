@@ -3,11 +3,12 @@ body{
   color: #383838;
 }
 .wrapper{
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
 header{
-  margin: 0 10%;
+  margin: 0 10% 150px 10%;
   max-width: 100vw;
 }
 .info{
@@ -51,21 +52,20 @@ h2{
   z-index: -1;
   position: absolute;
   left: 45vw;
-  top: -5vw;
+  top: 3vw;
   max-width: 30%;
 }
 .skills{
   width: 100%;
   height: 200px;
   background-color: #CCCCCC;
-  margin-top: 150px;
 }
-@media screen and (max-width: 1520px) {
+@media screen and (max-width: 1538px) {
     header{
-      margin: 0 5%;
+      margin: 0 5% 150px 5%;
     }
     .bitmoji{
-      top: -7vw;
+      top: 3vw;
     }
   }
 @media screen and (max-width: 1360px) {
@@ -75,19 +75,16 @@ h2{
   }
   .bitmoji{
     min-width: 500px;
-    top: -5vw;
+    top: 7vw;
   }
 @media screen and (max-width: 1110px) {
-    header{
-      margin: 0vw 5% 0% 5%;
-    }
     .works div{
       width: 192px;
       height: 128px;
     }
     .bitmoji{
-      min-width: 400px;
-      top: 2vw;
+      min-width: 450px;
+      top: 10vw;
     }
   }
 @media screen and (max-width: 895px) {
@@ -107,7 +104,8 @@ h2{
       width: 100%;
     }
     .bitmoji{
-      top: 0;
+      width: 400px;
+      top: 15vw;
     }
     .latest{
       margin-top: 50px;
@@ -115,7 +113,7 @@ h2{
   }
 @media screen and (max-width: 650px) {
     .bitmoji{
-      top: -10vw;
+      top: 10vw;
     }
   }
 @media screen and (max-width: 500px) {
@@ -134,7 +132,7 @@ h2{
       height: 50vw;
     }
     .bitmoji{
-      left: 45vw;
+      left: 40vw;
       top: -10vwvw;
     }
     .latest{
