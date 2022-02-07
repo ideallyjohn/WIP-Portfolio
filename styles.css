@@ -3,8 +3,9 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   color: #383838;
 }
-.wrapper{
+.landing{
   width: 100%;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -38,13 +39,22 @@ nav a{
   color: #383838;
   font-weight: bold;
   margin: 0;
-  padding: 0 20px;
+  padding-right: 40px;
 }
 .links a:hover{
   color: #FF7F2A;
 }
 .socials{
   display: flex;
+  margin: auto 0;
+  font-size: 24px;
+}
+.socials a{
+  text-decoration: none;
+  color: #383838;
+}
+.socials .fab:hover{
+  color: #FF7F2A;
 }
 .fa-envelope{
   font-size: 24px;
@@ -62,16 +72,18 @@ nav a{
   height: 10px;
   background-color: #0066FF;
   border-radius: 10px;
-  margin: auto 10px auto 0;
-  
+  margin: 17px 10px auto 0; 
+}
+.freelance p{
+  font-size: 14px
 }
 header{
-  margin: -50px 10% 150px 10%;
+  margin: -50px 10% 30px 10%;
   max-width: 100vw;
 }
 .info{
-  margin-top: 140px;
-  max-width: 40%;
+  margin-top: 120px;
+  max-width: 45%;
 }
 .info p{
   font-size: 14px;
@@ -87,6 +99,9 @@ header{
   padding: 12px 30px;
   border-radius: 5px;
 }
+.info a:hover{
+  background-color: #FF7F2A;
+}
 .banner{
   width: 80%;
 }
@@ -98,8 +113,13 @@ header{
   color: #0066FF;
   font-weight: bold;
 }
+.latest a:hover{
+  color: #FF7F2A;
+}
 h2{
-  font-size: 40px;
+  font-size: 36px;
+  text-decoration: underline;
+  text-decoration-color: #FF7F2A;
 }
 .works{
   width: 100%;
@@ -108,9 +128,9 @@ h2{
   margin-bottom: 30px;
 }
 .works div{
-  width: 300px;
-  height: 200px;
-  background-color: #CCCCCC;
+  width: 19vw;
+  height: 12vw;
+  background-color: #EEEEEE;
 }
 .bitmoji{
   min-width: 572px;
@@ -122,12 +142,129 @@ h2{
 }
 .skills{
   width: 100%;
-  height: 200px;
-  background-color: #CCCCCC;
+  min-height: 33vh;
+  background-color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 50px;
+  color: #A7A7A7;
+}
+.skills h2{
+  color: #383838;
+  text-decoration: underline;
+  text-decoration-color: #0066FF;
+  margin: 50px 0 50px 10%;
+}
+.skills div{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.skills .fab{
+  font-size: 5vw;
+}
+.tech{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tech p{
+  font-weight: bold;
+  color: #383838;
+}
+.portfolio{
+  width: 100%;
+  margin-bottom: 2px;
+}
+.portfolio h2{
+  margin: 50px 0 50px 10%;
+}
+.tags{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 0;
+  width: 30%;
+  margin: 0 auto 50px auto;
+}
+.tags li{
+  background-color: #A7A7A7;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.tags li:hover{
+  background-color: #0066FF;
+  cursor: pointer;
+}
+.portfolio-row{
+  width: 100%;
+  display: flex;
+  gap: 2px;
+  margin-bottom: 2px;
+}
+.single{
+  width: 25vw;
+  height: 25vw;  
+  background-color: #383838;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+}
+.single h3{
+  padding-top: 36%;
+}
+.single:hover{
+  background-color: #0066FF;
+  cursor: pointer;
+}
+.double{
+  width: 50vw;
+  height: 25vw;  
+  background-color: #383838;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+}
+.double h3{
+  padding-top: 18%;
+}
+.double:hover{
+  background-color: #FF7F2A;
+  cursor: pointer;
+}
+.about{
+  width: 100%;
+  min-height: 50vh;
+  background-color: #EEEEEE;
+}
+.about h2{
+  color: #383838;
+  text-decoration: underline;
+  text-decoration-color: #0066FF;
+  margin: 0px 0 50px 10%;
+  padding-top: 50px;
+}
+.contact{
+  width: 100%;
+  min-height: 50vh;
+}
+.contact h2{
+  margin: 0px 0 50px 10%;
+  padding-top: 50px;
 }
 @media screen and (max-width: 1538px) {
     header{
-      margin: 0 5% 150px 5%;
+      margin: 0 5% 30px 5%;
     }
     nav{
       margin: 0 5%;
@@ -135,27 +272,54 @@ h2{
     .bitmoji{
       top: 7vw;
     }
+    .skills h2{
+      margin: 50px 0 50px 5%;
+    }
+    .portfolio h2{
+      margin: 50px 0 50px 5%;
+    }
+    .about h2{
+      margin: 0 0 50px 5%;
+    }
+    .contact h2{
+      margin: 0 0 50px 5%;
+    }
+    .tags{
+      width: 40%;
+    }
   }
 @media screen and (max-width: 1360px) {
+  .info{
+    margin-top: 100px;
+      max-width: 55%;
+    }
   .works div{
-    width: 240px;
-    height: 160px;
+    width: 21vw;
+    height: 14vw;
   }
   .bitmoji{
     min-width: 500px;
     top: 12vw;
   }
 @media screen and (max-width: 1110px) {
+    .info{
+      max-width: 60%;
+    }
+    .info p{
+      padding-right: 20px;
+    }
     nav{
       margin: 0 2%;
-    }
-    .works div{
-      width: 192px;
-      height: 128px;
     }
     .bitmoji{
       min-width: 450px;
       top: 15vw;
+    }
+    .tech .fab{
+      font-size: 8vw;
+    }
+    .tags{
+      width: 65%;
     }
   }
 @media screen and (max-width: 895px) {
@@ -194,22 +358,42 @@ h2{
     .fa-bars{
       display: block;
     }
+    .tags{
+      width: 100%;
+      justify-content: space-around;
+    }
   }
 @media screen and (max-width: 650px) {
     .bitmoji{
       top: 10vw;
     }
+    .skills div{
+      width: 100%;
+    }
+    .tech p{
+      font-size: 14px;
+    }
+    .tags{
+      font-size: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3vw;
+    }
   }
 @media screen and (max-width: 500px) {
     .info{
-      margin-top: 140px;
+      margin-top: 160px;
       max-width: 70%;
+    }
+    .info p{
+      font-size: 11px;
+      padding: 10px 0 40px 0;
     }
     .works{
       flex-wrap: wrap;
       gap: 2vw;
       justify-content: start;
-      margin: 0 auto;
+      margin: 0 auto 30px auto;
     }
     .works div{
       width: 100vw;
@@ -221,6 +405,21 @@ h2{
     }
     .latest{
       margin-top: 80px;
+    }
+    .freelance p{
+      margin: auto 0;
+      font-size: 12px;
+    }
+    .freelance-status{
+      width: 7px;
+      height: 7px;
+      margin: 21px 5px auto 0;
+    }
+    .tech p{
+      font-size: 12px;
+    }
+    .tech .fab{
+      font-size: 10vw;
     }
   }
 }
